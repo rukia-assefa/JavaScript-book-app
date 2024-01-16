@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./add-book.css" />
+    <link rel="stylesheet" href="../_global/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header">
+        ABC BOOK STORE
+      </div>
+      <div class="topnav">
+        <a href="../index.htm">Home</a>
+        <a class="active" href="#">Register New Book</a>
+        <a href="../all-books/all-books.htm">All Books</a>
+        <a href="../edit-book/edit-book.htm">Edit Books</a>
+        <a href="../favorites/favorites.htm">Favorites</a>
+      </div>
+    </header>
+    <main>
+      <form onsubmit="handleSubmit()">
+        <div class="container">
+          Add new Book
+          <input id="isbn" placeholder="ISBN" pattern="[0-9]{3}-[0-9]{10}" title="The ISBN number must be in the format xxx-xxxxxxxxxx" />
+          <input id="title" placeholder="Title" />
+          <div>
+            <input id="author" placeholder="Author" />
+            <button  type="button">+</button>
+            <div id="extra-authors"></div>
+          </div>
+          <input id="edition" placeholder="Edition" />
+          <input id="image-url" placeholder="Image URL" />
+          <textarea
+            id="description"
+            placeholder="Description"
+            rows="5"
+            maxlength="250"
+          ></textarea>
+          <input id="old-price" type="number" placeholder="Old Price" min="1"/>
+          <input id="new-price" type="number" placeholder="Price" min="1" />
+          <input id="publisher" placeholder="Publisher" />
+          <input id="published-date" placeholder="Published date" type="date" />
+          <input id="pages" placeholder="Pages" min="1" />
+        <!-- give the user to choose the langauge option-->
+          <select id="language">
+            <option value="English">English</option>
+            <option value="Spanish">Spanish</option>
+            <option value="French">French</option>
+            <option value="German">German</option>
+            <option value="Chinese">Chinese</option>
+            <!-- Add more language options as needed -->
+          </select>
+          
+          <div id="categories-container-add">
+            <label for="categories">Categories (multiple)</label>
+            <select id="categories" multiple>
+              <option value="Academic">Academic</option>
+              <option value="kids">Kids</option>
+              <option value="Fiction">Fiction</option>
+              <option value="Business">Business</option>
+              <option value="Science">Science</option>
+              <option value="Reference">Reference</option>
+              <option value="Poetry">Poetry</option>
+              <option value="Religion">Religion</option>
+            </select>
+          </div>
+
+          <textarea
+            id="about-author"
+            placeholder="About the Author"
+            rows="5"
+            maxlength="250"
+          ></textarea>
+          <div>
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Clear" />
+          </div>
+        </div>
+      </form>
+    </main>
+    <div class="footer">
+      <p>(c)2023 ABC BOOKS</p>
+    </div>
+    <script src="./add-book.js"></script>
+  </body>
+</html>

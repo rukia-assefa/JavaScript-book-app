@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./_global/styles.css" />
+    <link rel="stylesheet" href="index.css" />
+
+
+  </head>
+
+  <body>
+    <header>
+      <div class="header">
+        ABC BOOK STORE
+      </div>
+      <div class="topnav">
+        <a class="active" href="/index.htm">Home</a>
+        <a href="./add-book/add-book.htm">Register New Book</a>
+        <a href="./all-books/all-books.htm">All Books</a>
+        <a href="./edit-book/edit-book.htm">Edit Books</a>
+        <a href="./favorites/favorites.htm">Favorites</a>
+      </div>
+      <style>
+        body  {
+          background-image: url("https://images.pexels.com/photos/4219038/pexels-photo-4219038.jpeg?auto=compress&cs=tinysrgb&w=1600");
+          background-color: #cccccc;
+        }
+        </style>
+    </header>
+  <main >
+      <h2>New Arrivals: Five Books</h2>
+      <div id="new-arrival" class="new"></div>
+      <!-- get top five new arrival books-->
+
+      <div>
+        <h1>Categories</h1> 
+        <div id="categories-list">
+          <label for="category-select">Select a category:</label>
+          <select id="category-select"></select>
+        </div>
+        <div>
+          <div style="display: flex">
+            <button id="button-click">Search</button>
+          </div>
+          <div id="books-list"></div>
+        </div>
+      </div>
+      
+
+  </main>
+    <div class="footer">
+      <p>(c)2023 ABC BOOKS</p>
+    </div>
+    <script src="index.js"></script>
+
+  </body>
+</html>

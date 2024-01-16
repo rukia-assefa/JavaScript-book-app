@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./edit-book.css" />
+    <link rel="stylesheet" href="../_global/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header">
+        ABC BOOK STORE
+      </div>
+      <div class="topnav">
+        <a href="../index.htm">Home</a>
+        <a href="../add-book/add-book.htm">Register New Book</a>
+        <a href="../all-books/all-books.htm">All Books</a>
+        <a class="active" href="#">Edit Books</a>
+        <a href="../favorites/favorites.htm">Favorites</a>
+      </div>
+      <div id="modal-container" class="modal-container">
+        <div id="modal-content" class="modal-content">
+          <span class="close">&times; hello</span>
+          <!-- Book details form goes here -->
+        </div>
+      </div>
+      <style>
+        body  {
+          background-image: url("https://images.pexels.com/photos/4219038/pexels-photo-4219038.jpeg?auto=compress&cs=tinysrgb&w=1600");
+          background-color: #cccccc;
+        }
+        </style>
+    </header>
+    <main>
+      <div style="display: flex">
+        <input type="search" id="search-input" />
+        <button id="search-button">Search</button>
+      </div>
+      <div id="books-list"></div>
+    </main>
+    <div class="footer">
+      <p>(c)2023 ABC BOOKS</p>
+    </div>
+    <script src="edit-book.js"></script>
+  </body>
+</html>

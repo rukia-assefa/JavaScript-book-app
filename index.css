@@ -1,0 +1,38 @@
+.new{
+    height: 80;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+#categories-list{
+  height: 80px;
+  background: gray;
+
+}
+.book-card-title{
+  display: flex;
+  height: 200px;
+  width: 200px;
+}
+.book-card-image{
+  display: flex;
+  height: 100px;
+  width: 200px;
+}
+@media (max-width: 750px) {
+  .new {
+    flex-direction: column;  }
+    .book-card-title{
+      display: flex;
+      height: 100px;
+      width: 100px;
+    }
+    .book-card-image{
+      display: flex;
+      height: 50px;
+      width: 100px;
+    }
+}
+
